@@ -1,0 +1,5 @@
+amount = 24 
+amount1 = 7*6
+print(amount)
+print("Two dozen is: ", amount)
+print("Forty two is: ", amount1)
