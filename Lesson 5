@@ -1,0 +1,8 @@
+import math
+length = input("Please input a length: ")
+length = float(length)
+area = math.pow(length, 2)
+radius = input("Input radius")
+radius = float(radius)
+Totalarea = 0.5*math.pi*math.pow(radius,2) + 4*math.pow(radius,2)
+print("The area of a normans window", "is:", Totalarea)
