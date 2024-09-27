@@ -1,0 +1,77 @@
+"""Author: Haseeb Ali Khan
+Revision date: September 26th 2023
+Description: A code that will calcuate LXW, Area of the circle, Volume, Surface Area
+based on user input
+VARIABLE DICTIONARY:
+Length1: Based on user input defines the length for the equation LXW
+Width1: Based on user input defines the width for LXW
+Area: Based on user input the area is defined
+Radius1: Based on user input defines the radius for the equation needed for the area of the circle
+Area2: Gives the area of the circle based on user input
+Radius2: Based on user input defines the radius needed for volume and surface area
+Height1: Based on user input defines the height needed for volume and surface area
+Volume1:  Gives the volume  of a based on user input
+SurfaceArea: Gives the SA based on user input
+Length2: Based on user input defines the length needed for the pendulum
+Gravity: The gravity needed for the equation of the pendulum that the user does not need to input"""
+
+
+
+import math
+# Prints the following statement
+print("The first question")
+#Ask the user to specify the length
+Length1 = input("please input length: ")
+#Converts the length to the integer data type
+Length1 = int(Length1)
+#Asks the user to specify the length
+Width1 = input("please input width: ")
+#Converts the width to the integer data type
+Width1 = int(Width1)
+#Multiplies length times width for the area
+Area = int(Length1*Width1)
+#Prints the area
+print("The area is", Area)
+
+#Prints the following statement
+print("The second question")
+#Asks the user to input the radius
+Radius1 = input("please input radius: ")
+#Converts the variable value to the integer data type
+Radius1 = int(Radius1)
+#Calculates the area using the equation
+Area2 = math.pi*math.pow(Radius1,2)
+#Prints the area to the second decimal
+print("The area of the circle is %.2f" % Area2)
+
+#Prints the following statement
+print("The third question")
+#Asks the user to input the radius
+Radius2 = input("please input radius: ")
+#Converts the variable value to the integer data type
+Radius2 = int(Radius2)
+#Asks the user to input the height
+Height1 = input("please input height: ")
+#Converts the variable value into the integer data type
+Height1 = int(Height1)
+#Calculates the volume using the proper equation
+Volume1 = math.pi*math.pow(Radius2,2)*Height1
+#Calculates the surface area using the proper equation
+SurfaceArea = 2*math.pi*Radius2*Height1 + 2*math.pi*math.pow(Radius2,2)
+#Prints the volume to the 2nd decimal
+print("The volume is %.2f" % Volume1)
+#Prints the SA to the 2nd decimal
+print("The surface area is %.2f" % SurfaceArea)
+
+#Prints the following statement
+print("The fourth question")
+#Asks the user to input the length
+Length2 = input("please input length: ")
+#Converts the variable value to the integer data type
+Length2 = int(Length2)
+#Gravity value is specifed to 8 and is made to the float data type
+Gravity:float = float(9.8)
+#Calculates the pendulum
+Pendulum = 2*math.pi*(math.sqrt(Length2/Gravity))
+#Prints the pendulum to the 2nd decimal
+print("The pendulum is %.2f" % Pendulum)
