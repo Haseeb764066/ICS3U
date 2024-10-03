@@ -1,0 +1,15 @@
+print("Part A")
+count = 9
+while (count != 0):
+    count -= 1
+    print(count)
+    
+
+print("Part B")
+trinumber = 0
+n = 5
+count = 0
+while (count<= n):
+    count = count+1
+    trinumber = trinumber + count
+    print(trinumber)
