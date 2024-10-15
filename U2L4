@@ -1,0 +1,36 @@
+Modify 1#
+N = int(input("Please Input a value: "))
+factorial = N
+count = N
+while (count > 0):
+  count -= 1
+  if (count != 0):
+    factorial *= count
+print("%d = %d" % (N, factorial))
+#Modify 2
+N = int(input("Input a value: "))
+Ncount = 1
+while (Ncount <= N):
+  factorial = Ncount
+  count = Ncount
+  while (count > 0):
+    count -= 1
+    if (count != 0):
+      factorial *= count
+  print("%d = %d" % (Ncount, factorial))
+  Ncount += 1
+
+#Modify 3
+N = int(input("Input a value: "))
+N_count = 0
+while (N_count <= N):
+  factorial = N_count
+  count = N_count
+  while (count > 0):
+    count -= 1
+    if (count != 0):
+      factorial *= count
+      if (count == 0):
+        factorial = 1
+  print("%d = %d" % (N_count, factorial))
+  N_count += 1
