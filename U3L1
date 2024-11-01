@@ -1,0 +1,18 @@
+progname = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in."
+print(progname) # prediction A
+print(progname[0]) # Prediction B
+
+for c in progname: #Prediction C
+    print(c, sep="", end="") # D: What is the purpose of
+                             # setting sep and end to ""?  
+print() # E: What is the purpose of this empty print()
+        # statement?
+
+for c in range(len(progname)): 
+    print(c, progname[c])
+space = 0
+for c in progname:
+  if c == " ":
+    space += 1
+    
+print("There is %d spaces in the printed text" % space)
